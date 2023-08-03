@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "blktrace-to-influx"
+version = "0.1.0"
+description = ""
+authors = ["Kristian Koehntopp <kris-git@koehntopp.de>"]
+readme = "README.md"
+packages = [{include = "blktrace_to_influx"}]
+
+scripts = { blkflux = "blktrace_to_influx.cli:main"}
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+mypy = "^1.4.1"
+black = "^23.7.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
