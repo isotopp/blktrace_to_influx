@@ -10,10 +10,12 @@ scripts = { blkflux = "blktrace_to_influx.cli:main"}
 
 [tool.poetry.dependencies]
 python = "^3.10"
+click = "^8.1.6"
 
 [tool.poetry.dev-dependencies]
 mypy = "^1.4.1"
 black = "^23.7.0"
+pytest = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
