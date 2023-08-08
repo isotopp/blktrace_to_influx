@@ -6,7 +6,7 @@ authors = ["Kristian Koehntopp <kris-git@koehntopp.de>"]
 readme = "README.md"
 packages = [{include = "blktrace_to_influx"}]
 
-scripts = { blkflux = "blktrace_to_influx.cli:main"}
+scripts = { blkflux = "blktrace_to_influx.cli:cli"}
 
 [tool.poetry.dependencies]
 python = "^3.10"
